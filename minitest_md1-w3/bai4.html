@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //Bài 4:
+  //Viết chương trình tính tổng các số nguyên tố nhỏ hơn 500
+  let sum=0;
+  for(let i=2;i<500;i++) {
+      let check=false;
+      for (let j = 2; j < i; j++) {
+          if (i % j == 0) {
+              check=true;
+              break;
+          }
+      }
+      if(check==true) {
+          sum += i;
+      }
+  }document.write(sum);
+</script>
+</body>
+</html>
